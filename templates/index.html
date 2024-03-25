@@ -1,0 +1,114 @@
+{% extends "particle-zola/templates/index.html" %}
+
+{% block section_ml %}
+<section id="ml">
+  <div class="user-details">
+    <h1>Machine Learning / AI</h1>
+    <p>My (recently  embarked upon) self-taught journey to learn and understand this new world of AI everywhere</p>
+  </div>
+
+  <div class="user-projects">
+    <div class="images-right">
+      <img alt="poker-bot" src="{{ config.base_url ~ '/img/poker2.png' }}" />
+    </div>
+    <div class="contents">
+      <h2>Transactions Classifier</h2>
+      <ul>
+        <li><a href="#">Motivation: Replacement for my usage of mint.com</a></li>
+        <li><a href="#">Different types of models</a></li>
+        <li><a href="#">Exploring hyperparameters</a></li>
+        <li><a href="#">What has the model actually learned? (wip)</a></li>
+        <li><a href="#">Lessons Learned, and next steps</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="user-projects">
+    <div class="images-left">
+      <img alt="photobhejo" src="{{ config.base_url ~ '/img/photobhejo.jpg' }}" />
+    </div>
+    <div class="contents-right">
+      <h2>Reinforcement Learning (TicTacToe)</h2>
+      <ul>
+        <li><a href="#">Motivation</a></li>
+        <li><a href="#">Via an exhaustive state space</a></li>
+        <li><a href="#">Via a neural network</a></li>
+        <li><a href="#">Lessons Learned, and next steps</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block section_ios %}
+<section id="ios">
+  <div class="user-details">
+    <h1>iOS</h1>
+    
+    <p>I have ~12 years of iOS development experience at Google, and currently lead (TL+M) the iOS Frameworks team.</p>
+    <p>Previously, I was the TechLead+Manager of the Google+ app on iOS.</p>
+  </div>
+
+  <div class="user">
+    <div class="tech">
+      <h1>SRL : Dependency Injection Framework</h1>
+      <p>Compile time safe validation of DI</p>
+      <p>Swift and Objective-C cross-compatible</p>
+      <p>Extremely fast injection and validation</p>
+      <p>Adopted by >90% of top-30 Google apps</p>
+    </div>
+
+    <div class="tech">
+      <h1>iRPC : Standard RPC Framework</h1>
+      <p>Standardizes across multiple legacy & modern RPC stacks at Google</p>
+      <p>Future proof to new RPC systems</p>
+      <p>Adopted by >60% of top-30 Google apps</p>
+    </div>
+
+    <div class="tech">
+      <h1>Heimdall : Conformance Framework</h1>
+      <p>Enables apps to define and enforce code structure, dependency or architectural rules, at compile time</p>
+      <p>Offers powerful tooling for managing violations and exemptions</p>
+      <p>Adopted by Maps, YouTube, Gmail, Search, Chrome, Home...</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block section_other %}
+<section id="projects">
+  <div class="user-details">
+    <h1>Other Projects</h1>
+  </div>
+
+  <div class="user-projects">
+    <div class="images-right">
+      <img alt="poker-bot" src="{{ config.base_url ~ '/img/poker2.png' }}" />
+    </div>
+    <div class="contents">
+      <h2>Poker Bot (Texas Holdem)</h2>
+      <ul>
+        <li>Bot plays with a probabilistic, heuristics based strategy</li>
+        <li>Offered a heads up arena for human vs bot play</li>
+        <li>iPad and Mac app, written in Swift + SwiftUI</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="user-projects">
+    <div class="images-left">
+      <img alt="photobhejo" src="{{ config.base_url ~ '/img/photobhejo.jpg' }}" />
+    </div>
+    <div class="contents-right">
+      <h2>photobhejo.com</h2>
+      <ul>
+        <li>Website to make it easy to send printed photos to family in India</li>
+        <li>Users could email their photos, which would go to their registered accounts</li>
+        <li>Collected photos would be printed out and mailed at end of month (via external service)</li>
+        <li>Built in 2012; shut down in 2014 (<a href="https://web.archive.org/web/20130311135741/http://www.photobhejo.com/">archive.org snapshot</a>)</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+{% endblock section_other %}
